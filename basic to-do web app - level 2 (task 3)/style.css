@@ -1,0 +1,108 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+}
+
+#task-form {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#new-task {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #333;
+    outline: none;
+    overflow: auto; 
+    max-height: 100px; 
+}
+
+#new-task:focus {
+    border-color: #3498db;
+}
+
+button {
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: flex-start;
+    border-bottom: 1px solid #ecf0f1;
+    padding: 15px;
+    transition: background-color 0.3s ease;
+    background-color: #ecf0f1;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    animation: fadeIn 0.5s ease;
+    max-height: 150px; 
+    overflow: auto; 
+}
+li:hover {
+    background-color: #bdc3c7;
+    transform: scale(1.02);
+}
+
+button.edit-btn {
+    background-color: #2ecc71;
+}
+
+button.delete-btn {
+    background-color: #e74c3c;
+}
+
+.delete-btn, .edit-btn {
+    color: #fff;
+    border: none;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover, .edit-btn:hover {
+    opacity: 0.9;
+}
+#new-task {
+    overflow: auto; 
+    max-height: 100px;
+}
